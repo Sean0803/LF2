@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#control" prefHeight="550.0" prefWidth="800.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.VSModeController">
+   <children>
+      <GridPane prefHeight="106.0" prefWidth="800.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="200.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="200.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="200.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="200.0" prefWidth="200.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="53.0" minHeight="53.0" prefHeight="53.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="53.0" minHeight="53.0" prefHeight="53.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <children>
+            <Pane prefHeight="53.0" prefWidth="200.0" style="-fx-background-color: #2f488d;">
+               <children>
+                  <ImageView fx:id="c1Model" fitHeight="45.0" fitWidth="40.0" layoutX="14.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2f488d" height="14.0" layoutX="58.0" layoutY="9.5" stroke="#40609d" strokeType="INSIDE" width="130.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2f488d" height="14.0" layoutX="58.0" layoutY="30.5" stroke="#40609d" strokeType="INSIDE" width="130.0" />
+                  <Rectangle fx:id="c1Health" arcHeight="5.0" arcWidth="5.0" fill="#fe0e16" height="13.0" layoutX="58.0" layoutY="10.0" stroke="#ffffff00" strokeType="INSIDE" visible="false" width="130.0" />
+                  <Rectangle fx:id="c1Mana" arcHeight="5.0" arcWidth="5.0" fill="#0005f9" height="13.0" layoutX="58.0" layoutY="31.0" stroke="#ffffff00" strokeType="INSIDE" visible="false" width="130.0" />
+               </children>
+            </Pane>
+            <Pane prefHeight="53.0" prefWidth="200.0" style="-fx-background-color: #2f488d;" GridPane.columnIndex="1">
+               <children>
+                  <ImageView fx:id="c2Model" fitHeight="45.0" fitWidth="40.0" layoutX="14.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2f488d" height="14.0" layoutX="58.0" layoutY="9.5" stroke="#40609d" strokeType="INSIDE" width="130.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2f488d" height="14.0" layoutX="58.0" layoutY="30.5" stroke="#40609d" strokeType="INSIDE" width="130.0" />
+                  <Rectangle fx:id="c2Health" arcHeight="5.0" arcWidth="5.0" fill="#fe0e16" height="13.0" layoutX="58.0" layoutY="10.0" stroke="#ffffff00" strokeType="INSIDE" visible="false" width="130.0" />
+                  <Rectangle fx:id="c2Mana" arcHeight="5.0" arcWidth="5.0" fill="#0005f9" height="13.0" layoutX="58.0" layoutY="31.0" stroke="#ffffff00" strokeType="INSIDE" visible="false" width="130.0" />
+               </children>
+            </Pane>
+            <Pane prefHeight="53.0" prefWidth="200.0" style="-fx-background-color: #2f488d;" GridPane.columnIndex="2">
+               <children>
+                  <ImageView fx:id="c3Model" fitHeight="45.0" fitWidth="40.0" layoutX="14.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2f488d" height="14.0" layoutX="58.0" layoutY="9.5" stroke="#40609d" strokeType="INSIDE" width="130.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2f488d" height="14.0" layoutX="58.0" layoutY="30.5" stroke="#40609d" strokeType="INSIDE" width="130.0" />
+                  <Rectangle fx:id="c3Health" arcHeight="5.0" arcWidth="5.0" fill="#fe0e16" height="13.0" layoutX="58.0" layoutY="10.0" stroke="#ffffff00" strokeType="INSIDE" visible="false" width="130.0" />
+                  <Rectangle fx:id="c3Mana" arcHeight="5.0" arcWidth="5.0" fill="#0005f9" height="13.0" layoutX="58.0" layoutY="31.0" stroke="#ffffff00" strokeType="INSIDE" visible="false" width="130.0" />
+               </children>
+            </Pane>
+            <Pane prefHeight="53.0" prefWidth="200.0" style="-fx-background-color: #2f488d;" GridPane.columnIndex="3">
+               <children>
+                  <ImageView fx:id="c4Model" fitHeight="45.0" fitWidth="40.0" layoutX="14.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2f488d" height="14.0" layoutX="58.0" layoutY="9.5" stroke="#40609d" strokeType="INSIDE" width="130.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2f488d" height="14.0" layoutX="58.0" layoutY="30.5" stroke="#40609d" strokeType="INSIDE" width="130.0" />
+                  <Rectangle fx:id="c4Health" arcHeight="5.0" arcWidth="5.0" fill="#fe0e16" height="13.0" layoutX="58.0" layoutY="10.0" stroke="#ffffff00" strokeType="INSIDE" visible="false" width="130.0" />
+                  <Rectangle fx:id="c4Mana" arcHeight="5.0" arcWidth="5.0" fill="#0005f9" height="13.0" layoutX="58.0" layoutY="31.0" stroke="#ffffff00" strokeType="INSIDE" visible="false" width="130.0" />
+               </children>
+            </Pane>
+            <Pane prefHeight="53.0" prefWidth="200.0" style="-fx-background-color: #2f488d;" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fx:id="c5Model" fitHeight="45.0" fitWidth="40.0" layoutX="14.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2f488d" height="14.0" layoutX="58.0" layoutY="9.5" stroke="#40609d" strokeType="INSIDE" width="130.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2f488d" height="14.0" layoutX="58.0" layoutY="30.5" stroke="#40609d" strokeType="INSIDE" width="130.0" />
+                  <Rectangle fx:id="c5Health" arcHeight="5.0" arcWidth="5.0" fill="#fe0e16" height="13.0" layoutX="58.0" layoutY="10.0" stroke="#ffffff00" strokeType="INSIDE" visible="false" width="130.0" />
+                  <Rectangle fx:id="c5Mana" arcHeight="5.0" arcWidth="5.0" fill="#0005f9" height="13.0" layoutX="58.0" layoutY="31.0" stroke="#ffffff00" strokeType="INSIDE" visible="false" width="130.0" />
+               </children>
+            </Pane>
+            <Pane prefHeight="53.0" prefWidth="200.0" style="-fx-background-color: #2f488d;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fx:id="c6Model" fitHeight="45.0" fitWidth="40.0" layoutX="14.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2f488d" height="14.0" layoutX="58.0" layoutY="9.5" stroke="#40609d" strokeType="INSIDE" width="130.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2f488d" height="14.0" layoutX="58.0" layoutY="30.5" stroke="#40609d" strokeType="INSIDE" width="130.0" />
+                  <Rectangle fx:id="c6Health" arcHeight="5.0" arcWidth="5.0" fill="#fe0e16" height="13.0" layoutX="58.0" layoutY="10.0" stroke="#ffffff00" strokeType="INSIDE" visible="false" width="130.0" />
+                  <Rectangle fx:id="c6Mana" arcHeight="5.0" arcWidth="5.0" fill="#0005f9" height="13.0" layoutX="58.0" layoutY="31.0" stroke="#ffffff00" strokeType="INSIDE" visible="false" width="130.0" />
+               </children>
+            </Pane>
+            <Pane prefHeight="53.0" prefWidth="200.0" style="-fx-background-color: #2f488d;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fx:id="c7Model" fitHeight="45.0" fitWidth="40.0" layoutX="14.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2f488d" height="14.0" layoutX="58.0" layoutY="9.5" stroke="#40609d" strokeType="INSIDE" width="130.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2f488d" height="14.0" layoutX="58.0" layoutY="30.5" stroke="#40609d" strokeType="INSIDE" width="130.0" />
+                  <Rectangle fx:id="c7Health" arcHeight="5.0" arcWidth="5.0" fill="#fe0e16" height="13.0" layoutX="58.0" layoutY="10.0" stroke="#ffffff00" strokeType="INSIDE" visible="false" width="130.0" />
+                  <Rectangle fx:id="c7Mana" arcHeight="5.0" arcWidth="5.0" fill="#0005f9" height="13.0" layoutX="58.0" layoutY="31.0" stroke="#ffffff00" strokeType="INSIDE" visible="false" width="130.0" />
+               </children>
+            </Pane>
+            <Pane prefHeight="53.0" prefWidth="200.0" style="-fx-background-color: #2f488d;" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fx:id="c8Model" fitHeight="45.0" fitWidth="40.0" layoutX="14.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2f488d" height="14.0" layoutX="58.0" layoutY="9.5" stroke="#40609d" strokeType="INSIDE" width="130.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2f488d" height="14.0" layoutX="58.0" layoutY="30.5" stroke="#40609d" strokeType="INSIDE" width="130.0" />
+                  <Rectangle fx:id="c8Health" arcHeight="5.0" arcWidth="5.0" fill="#fe0e16" height="13.0" layoutX="58.0" layoutY="10.0" stroke="#ffffff00" strokeType="INSIDE" visible="false" width="130.0" />
+                  <Rectangle fx:id="c8Mana" arcHeight="5.0" arcWidth="5.0" fill="#0005f9" height="13.0" layoutX="58.0" layoutY="31.0" stroke="#ffffff00" strokeType="INSIDE" visible="false" width="130.0" />
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="20.0" layoutY="106.0" stroke="BLACK" strokeType="OUTSIDE" width="800.0" />
+      <Pane fx:id="battleField" layoutY="126.0" prefHeight="389.0" prefWidth="800.0" style="-fx-background-color: #000000;">
+         <children>
+            <ImageView fitHeight="397.0" fitWidth="800.0" layoutX="3.0" pickOnBounds="true" preserveRatio="true">
+               <viewport>
+                  <Rectangle2D height="389.0" width="800.0" />
+               </viewport>
+               <image>
+                  <Image url="@res/Background/back05.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="35.0" layoutY="515.0" stroke="BLACK" strokeType="OUTSIDE" width="800.0" />
+      <ImageView fitHeight="65.0" fitWidth="65.0" layoutX="45.0" layoutY="265.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../res/Characters/walk/davis.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="45.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Computer">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

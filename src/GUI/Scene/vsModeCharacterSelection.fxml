@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="root" maxHeight="550.0" maxWidth="800.0" minHeight="550.0" minWidth="800.0" onKeyPressed="#rootInput" prefHeight="550.0" prefWidth="800.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.VSModeCharacterSelectionController">
+   <children>
+      <Pane fx:id="boxPane" layoutX="38.0" layoutY="30.0" prefHeight="490.0" prefWidth="724.0" style="-fx-background-color: #122564;">
+         <children>
+            <Label layoutX="250.0" prefHeight="57.0" prefWidth="224.0" text="Character Selection" textAlignment="CENTER" textFill="#ffffffca">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Label>
+            <Pane fx:id="c1" layoutX="20.0" layoutY="34.0" onKeyPressed="#c1InputKey" prefHeight="215.0" prefWidth="216.0">
+               <children>
+                  <ImageView fx:id="c1Image" fitHeight="120.0" fitWidth="120.0" layoutX="94.0" pickOnBounds="true" preserveRatio="true">
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+                  <Button fx:id="c1Player" layoutX="96.0" layoutY="125.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="120.0" style="-fx-background-color: #000000;" text="Join?" textAlignment="CENTER" textFill="WHITE" />
+                  <Button fx:id="c1Fighter" layoutX="96.0" layoutY="157.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="120.0" style="-fx-background-color: #000000;" textAlignment="CENTER" textFill="WHITE" />
+                  <Button fx:id="c1Team" layoutX="96.0" layoutY="189.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="120.0" style="-fx-background-color: #000000;" textAlignment="CENTER" textFill="WHITE" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Pane>
+            <Pane fx:id="c2" disable="true" layoutX="236.0" layoutY="34.0" onKeyPressed="#c2InputKey" prefHeight="216.0" prefWidth="156.0">
+               <children>
+                  <ImageView fx:id="c2Image" fitHeight="120.0" fitWidth="120.0" layoutX="34.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button fx:id="c2Player" layoutX="36.0" layoutY="125.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="120.0" style="-fx-background-color: #000000;" text="Join?" textAlignment="CENTER" textFill="WHITE" />
+                  <Button fx:id="c2Fighter" layoutX="36.0" layoutY="157.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="120.0" style="-fx-background-color: #000000;" textAlignment="CENTER" textFill="WHITE" />
+                  <Button fx:id="c2Team" layoutX="36.0" layoutY="189.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="120.0" style="-fx-background-color: #000000;" textAlignment="CENTER" textFill="WHITE" />
+               </children>
+            </Pane>
+            <Pane fx:id="c3" disable="true" layoutX="392.0" layoutY="34.0" onKeyPressed="#c3InputKey" prefHeight="216.0" prefWidth="156.0">
+               <children>
+                  <ImageView fx:id="c3Image" fitHeight="120.0" fitWidth="120.0" layoutX="34.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button fx:id="c3Player" layoutX="36.0" layoutY="125.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="120.0" style="-fx-background-color: #000000;" text="Join?" textAlignment="CENTER" textFill="WHITE" />
+                  <Button fx:id="c3Fighter" layoutX="36.0" layoutY="157.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="120.0" style="-fx-background-color: #000000;" textAlignment="CENTER" textFill="WHITE" />
+                  <Button fx:id="c3Team" layoutX="36.0" layoutY="189.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="120.0" style="-fx-background-color: #000000;" textAlignment="CENTER" textFill="WHITE" />
+               </children>
+            </Pane>
+            <Pane fx:id="c4" disable="true" layoutX="548.0" layoutY="34.0" onKeyPressed="#c4InputKey" prefHeight="216.0" prefWidth="156.0">
+               <children>
+                  <ImageView fx:id="c4Image" fitHeight="120.0" fitWidth="120.0" layoutX="34.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button fx:id="c4Player" layoutX="36.0" layoutY="125.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="120.0" style="-fx-background-color: #000000;" text="Join?" textAlignment="CENTER" textFill="WHITE" />
+                  <Button fx:id="c4Fighter" layoutX="36.0" layoutY="157.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="120.0" style="-fx-background-color: #000000;" textAlignment="CENTER" textFill="WHITE" />
+                  <Button fx:id="c4Team" layoutX="36.0" layoutY="189.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="120.0" style="-fx-background-color: #000000;" textAlignment="CENTER" textFill="WHITE" />
+               </children>
+            </Pane>
+            <Pane fx:id="c5" disable="true" layoutX="20.0" layoutY="266.0" onKeyPressed="#c5InputKey" prefHeight="215.0" prefWidth="216.0">
+               <children>
+                  <ImageView fx:id="c5Image" fitHeight="120.0" fitWidth="120.0" layoutX="94.0" pickOnBounds="true" preserveRatio="true">
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+                  <Button fx:id="c5Player" layoutX="96.0" layoutY="125.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="120.0" style="-fx-background-color: #000000;" text="Join?" textAlignment="CENTER" textFill="WHITE" />
+                  <Button fx:id="c5Fighter" layoutX="96.0" layoutY="157.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="120.0" style="-fx-background-color: #000000;" textAlignment="CENTER" textFill="WHITE" />
+                  <Button fx:id="c5Team" layoutX="96.0" layoutY="189.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="120.0" style="-fx-background-color: #000000;" textAlignment="CENTER" textFill="WHITE" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Pane>
+            <Pane fx:id="c6" disable="true" layoutX="236.0" layoutY="266.0" onKeyPressed="#c6InputKey" prefHeight="216.0" prefWidth="156.0">
+               <children>
+                  <ImageView fx:id="c6Image" fitHeight="120.0" fitWidth="120.0" layoutX="34.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button fx:id="c6Player" layoutX="36.0" layoutY="125.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="120.0" style="-fx-background-color: #000000;" text="Join?" textAlignment="CENTER" textFill="WHITE" />
+                  <Button fx:id="c6Fighter" layoutX="36.0" layoutY="157.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="120.0" style="-fx-background-color: #000000;" textAlignment="CENTER" textFill="WHITE" />
+                  <Button fx:id="c6Team" layoutX="36.0" layoutY="189.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="120.0" style="-fx-background-color: #000000;" textAlignment="CENTER" textFill="WHITE" />
+               </children>
+            </Pane>
+            <Pane fx:id="c7" disable="true" layoutX="392.0" layoutY="266.0" onKeyPressed="#c7InputKey" prefHeight="216.0" prefWidth="156.0">
+               <children>
+                  <ImageView fx:id="c7Image" fitHeight="120.0" fitWidth="120.0" layoutX="34.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button fx:id="c7Player" layoutX="36.0" layoutY="125.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="120.0" style="-fx-background-color: #000000;" text="Join?" textAlignment="CENTER" textFill="WHITE" />
+                  <Button fx:id="c7Fighter" layoutX="36.0" layoutY="157.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="120.0" style="-fx-background-color: #000000;" textAlignment="CENTER" textFill="WHITE" />
+                  <Button fx:id="c7Team" layoutX="36.0" layoutY="189.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="120.0" style="-fx-background-color: #000000;" textAlignment="CENTER" textFill="WHITE" />
+               </children>
+            </Pane>
+            <Pane fx:id="c8" disable="true" layoutX="548.0" layoutY="266.0" onKeyPressed="#c8InputKey" prefHeight="216.0" prefWidth="156.0">
+               <children>
+                  <ImageView fx:id="c8Image" fitHeight="120.0" fitWidth="120.0" layoutX="34.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button fx:id="c8Player" layoutX="36.0" layoutY="125.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="120.0" style="-fx-background-color: #000000;" text="Join?" textAlignment="CENTER" textFill="WHITE" />
+                  <Button fx:id="c8Fighter" layoutX="36.0" layoutY="157.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="120.0" style="-fx-background-color: #000000;" textAlignment="CENTER" textFill="WHITE" />
+                  <Button fx:id="c8Team" layoutX="36.0" layoutY="189.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="120.0" style="-fx-background-color: #000000;" textAlignment="CENTER" textFill="WHITE" />
+               </children>
+            </Pane>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#010b52" height="27.0" layoutX="10.0" layoutY="159.0" opacity="0.6" stroke="BLACK" strokeType="INSIDE" width="106.0" />
+            <Label layoutX="44.0" layoutY="164.0" text="Player" textFill="WHITE" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#010b52" height="27.0" layoutX="10.0" layoutY="191.0" opacity="0.6" stroke="BLACK" strokeType="INSIDE" width="106.0" />
+            <Label layoutX="41.0" layoutY="196.0" text="Fighter" textFill="WHITE" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#010b52" height="27.0" layoutX="10.0" layoutY="223.0" opacity="0.6" stroke="BLACK" strokeType="INSIDE" width="106.0" />
+            <Label layoutX="45.0" layoutY="228.0" text="Team" textFill="WHITE" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#010b53" height="27.0" layoutX="236.0" layoutY="159.0" opacity="0.6" stroke="BLACK" strokeType="INSIDE" width="36.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#010b53" height="27.0" layoutX="236.0" layoutY="191.0" opacity="0.6" stroke="BLACK" strokeType="INSIDE" width="36.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#010b53" height="27.0" layoutX="236.0" layoutY="223.0" opacity="0.6" stroke="BLACK" strokeType="INSIDE" width="36.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#010b52" height="27.0" layoutX="392.0" layoutY="159.0" opacity="0.6" stroke="BLACK" strokeType="INSIDE" width="36.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#010b52" height="27.0" layoutX="392.0" layoutY="191.0" opacity="0.6" stroke="BLACK" strokeType="INSIDE" width="36.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#010b52" height="27.0" layoutX="392.0" layoutY="223.0" opacity="0.6" stroke="BLACK" strokeType="INSIDE" width="36.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#010b52" height="27.0" layoutX="548.0" layoutY="159.0" opacity="0.6" stroke="BLACK" strokeType="INSIDE" width="36.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#010b52" height="27.0" layoutX="548.0" layoutY="191.0" opacity="0.6" stroke="BLACK" strokeType="INSIDE" width="36.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#010b52" height="27.0" layoutX="548.0" layoutY="223.0" opacity="0.6" stroke="BLACK" strokeType="INSIDE" width="36.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#010b52" height="27.0" layoutX="10.0" layoutY="391.0" opacity="0.6" stroke="BLACK" strokeType="INSIDE" width="106.0" />
+            <Label layoutX="43.0" layoutY="396.0" text="Player" textFill="WHITE" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#010b52" height="27.0" layoutX="10.0" layoutY="423.0" opacity="0.6" stroke="BLACK" strokeType="INSIDE" width="106.0" />
+            <Label layoutX="41.0" layoutY="428.0" text="Fighter" textFill="WHITE" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#010b52" height="27.0" layoutX="10.0" layoutY="455.0" opacity="0.6" stroke="BLACK" strokeType="INSIDE" width="106.0" />
+            <Label layoutX="45.0" layoutY="460.0" text="Team" textFill="WHITE" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#010b52" height="27.0" layoutX="236.0" layoutY="391.0" opacity="0.6" stroke="BLACK" strokeType="INSIDE" width="36.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#010b52" height="27.0" layoutX="236.0" layoutY="423.0" opacity="0.6" stroke="BLACK" strokeType="INSIDE" width="36.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#010b52" height="27.0" layoutX="236.0" layoutY="455.0" opacity="0.6" stroke="BLACK" strokeType="INSIDE" width="36.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#010b52" height="27.0" layoutX="392.0" layoutY="391.0" opacity="0.6" stroke="BLACK" strokeType="INSIDE" width="36.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#010b52" height="27.0" layoutX="392.0" layoutY="423.0" opacity="0.6" stroke="BLACK" strokeType="INSIDE" width="36.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#010b52" height="27.0" layoutX="392.0" layoutY="455.0" opacity="0.6" stroke="BLACK" strokeType="INSIDE" width="36.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#010b52" height="27.0" layoutX="548.0" layoutY="391.0" opacity="0.6" stroke="BLACK" strokeType="INSIDE" width="36.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#010b52" height="27.0" layoutX="548.0" layoutY="423.0" opacity="0.6" stroke="BLACK" strokeType="INSIDE" width="36.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#010b52" height="27.0" layoutX="548.0" layoutY="455.0" opacity="0.6" stroke="BLACK" strokeType="INSIDE" width="36.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="cptNumber" disable="true" layoutX="227.5" layoutY="227.5" prefHeight="115.0" prefWidth="365.0" style="-fx-background-color: #000E50; -fx-border-color: #122564;" visible="false">
+         <children>
+            <Pane layoutX="8.0" layoutY="8.0" prefHeight="99.0" prefWidth="349.0" style="-fx-background-color: #122564;">
+               <children>
+                  <Button fx:id="p4Btn" disable="true" layoutX="169.5" layoutY="49.0" mnemonicParsing="false" onKeyPressed="#p4BtnInputKey" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #122564;" text="4" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="p3Btn" disable="true" layoutX="134.5" layoutY="49.0" mnemonicParsing="false" onKeyPressed="#p3BtnInputKey" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #122564;" text="3" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Label layoutX="72.0" layoutY="9.0" text="How many Computer Players?" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Button disable="true" layoutX="29.5" layoutY="49.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #122564;" text="0" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="p1Btn" layoutX="61.5" layoutY="49.0" mnemonicParsing="false" onKeyPressed="#p1BtnInputKey" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #122564; -fx-border-color: #ffffff;" text="1" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="p2Btn" disable="true" layoutX="99.5" layoutY="49.0" mnemonicParsing="false" onKeyPressed="#p2BtnInputKey" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #122564;" text="2" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="p5Btn" disable="true" layoutX="204.5" layoutY="49.0" mnemonicParsing="false" onKeyPressed="#p5BtnInputKey" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #122564;" text="5" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="p6Btn" disable="true" layoutX="239.5" layoutY="49.0" mnemonicParsing="false" onKeyPressed="#p6BtnInputKey" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #122564;" text="6" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="p7Btn" disable="true" layoutX="274.5" layoutY="49.0" mnemonicParsing="false" onKeyPressed="#p7BtnInputKey" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #122564;" text="7" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane fx:id="ctrlPane" disable="true" layoutX="2.5" layoutY="2.5" prefHeight="144.0" prefWidth="214.0" style="-fx-background-color: #20316c; -fx-border-color: #334da2;" visible="false">
+         <children>
+            <Pane layoutX="5.0" layoutY="5.0" prefHeight="134.0" prefWidth="204.0" style="-fx-background-color: #334da2;">
+               <children>
+                  <Button fx:id="fightBtn" layoutX="71.0" layoutY="22.0" mnemonicParsing="false" onKeyPressed="#fightBtnInputKey" style="-fx-background-color: #334da2;" text="Fight!" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="resetBtn" disable="true" layoutX="60.0" layoutY="61.0" mnemonicParsing="false" onKeyPressed="#resetBtnInputKey" style="-fx-background-color: #334da2;" text="Reset All" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="exitBtn" disable="true" layoutX="78.0" layoutY="98.0" mnemonicParsing="false" onKeyPressed="#exitBtnInputKey" style="-fx-background-color: #334da2;" text="Exit" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Rectangle fx:id="fightBoarder" arcHeight="5.0" arcWidth="5.0" fill="#8f959c99" height="30.0" layoutX="68.0" layoutY="21.0" stroke="#8f959c99" strokeType="INSIDE" width="69.0" />
+                  <Rectangle fx:id="resetBoarder" arcHeight="5.0" arcWidth="5.0" fill="#8f959c99" height="30.0" layoutX="60.0" layoutY="60.0" stroke="#8f959c99" strokeType="INSIDE" visible="false" width="84.0" />
+                  <Rectangle fx:id="exitBoarder" arcHeight="5.0" arcWidth="5.0" fill="#8f959c99" height="30.0" layoutX="76.0" layoutY="97.0" stroke="#8f959c99" strokeType="INSIDE" visible="false" width="54.0" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane fx:id="quitPane" layoutX="300.0" layoutY="200.0" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" visible="false">
+         <children>
+            <Text layoutX="36.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Are you sure to quit?" />
+            <Button fx:id="yes" layoutX="36.0" layoutY="50.0" mnemonicParsing="false" onMouseClicked="#yesClicked" prefHeight="20.0" prefWidth="45.0" text="Yes" />
+            <Button fx:id="no" layoutX="118.0" layoutY="50.0" mnemonicParsing="false" onMouseClicked="#noClicked" prefHeight="20.0" prefWidth="45.0" text="No" />
+         </children>
+      </Pane>
+   </children>
+</Pane>
