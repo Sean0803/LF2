@@ -26,14 +26,13 @@ public class Skill extends Pane {
     private Image getHit;
 
     private int faceRight;
-    private boolean defend;
+    private boolean skillDefend;
     private boolean dead;
     private boolean hit;
 
     private ImageView imageView;
 
-    public Skill(int team, int damage, int mana, int posX, int posY, int posZ, int x, int y, int z,
-                 int faceRight, boolean defend, int range, int offset, int effTime) {
+    public Skill(int team, int damage, int mana, int posX, int posY, int posZ, int x, int y, int z, int faceRight, boolean skillDefend, int range, int offset, int effTime) {
         this.team = team;
         this.damage = damage;
         this.mana = mana;
@@ -44,7 +43,7 @@ public class Skill extends Pane {
         this.y = y;
         this.z = z;
         this.faceRight = faceRight;
-        this.defend = defend;
+        this.skillDefend = skillDefend;
         this.range = range;
         this.offset = offset;
         this.effTime = effTime;
@@ -53,8 +52,7 @@ public class Skill extends Pane {
         this.hit = false;
     }
 
-    public Skill(int team, int damage, int mana, Image ready, Image getHit, int posX, int posY, int posZ,
-                 int x, int y, int z, int faceRight, boolean defend, int range, int offset, int effTime) {
+    public Skill(int team, int damage, int mana, Image ready, Image getHit, int posX, int posY, int posZ, int x, int y, int z, int faceRight, boolean skillDefend, int range, int offset, int effTime) {
         this.team = team;
         this.damage = damage;
         this.mana = mana;
@@ -67,7 +65,7 @@ public class Skill extends Pane {
         this.y = y;
         this.z = z;
         this.faceRight = faceRight;
-        this.defend = defend;
+        this.skillDefend = skillDefend;
         this.range = range;
         this.offset = offset;
         this.effTime = effTime;
@@ -107,7 +105,7 @@ public class Skill extends Pane {
                 && posX - x <= player.getPosX() + 30 && player.getPosX() + 30 <= posX + x
                 && posY - y <= player.getPosY() - 30 && player.getPosY() - 30 <= posY + y
                 && posZ - z <= player.getPosZ() && player.getPosZ() <= posZ + z) {
-            if (defend && faceRight != player.getFaceRight() && !player.getCharacterStatus().equals(CharacterStatus.DEFEND)) {
+            if ((player.getCharacter().getSkillDetail().isDefend() || player.getCharacterStatus().equals(CharacterStatus.DEFEND)) && faceRight != player.getFaceRight()) {
                 this.hit = true;
                 return true;
             } else {
@@ -245,12 +243,12 @@ public class Skill extends Pane {
         this.faceRight = faceRight;
     }
 
-    public boolean isDefend() {
-        return defend;
+    public boolean isSkillDefend() {
+        return skillDefend;
     }
 
-    public void setDefend(boolean defend) {
-        this.defend = defend;
+    public void setSkillDefend(boolean skillDefend) {
+        this.skillDefend = skillDefend;
     }
 
     public boolean isDead() {
